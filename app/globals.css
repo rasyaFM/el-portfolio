@@ -2,32 +2,137 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* Navbar */
+.nav {
+    background-image : url("../public/bgnav.png");
+    width : 1440px;
+    z-index : 3;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* General Body */
+.body{
+    width : 1440px;
+    background-image : url("../public/bgbody.png");
+    z-index : 1;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+/* Banner */
+.banner{
+    width : 1440px;
+    height : 650px;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.namban, .photo, .descbio {
+    display : block;
+    margin-left : auto;
+    margin-right: auto;
+}
+
+
+.left{
+    margin-top : 8rem;
+}
+.photo{
+    margin-top : 3.5rem;
+}
+
+.right{
+    margin-top : 8.5rem;
+}
+
+.descbio{
+    width : 730px;
+    height : 192px;
+    padding : 0;
+    background-color : #000000;
+}
+.descbioin{
+    width : 730px;
+    height : 180px;
+    padding : 15px 20px 20px 20px;
+    font-family : Poppins;
+}
+
+
+.descp{
+    margin : 3px 3px 3px 3px;
+}
+
+/* Skills */
+
+#skills {
+    width : 1100px;
+}
+
+#nama-skill {
+    font-family : Cascadia Code;
+}
+
+/* Portfolio */
+
+.filter{
+    justify-content : space-around;
+}
+
+.cards {
+    display : flex;
+    flex-wrap : wrap;
+    justify-content : center;
+    align-items : center;
+    margin : 3rem 2rem 0 2rem;
+    gap : 1rem;
+}
+
+.card-items{
+    width : 375px;
+    height : 375px;
+    
+}
+
+
+/* Footer */
+
+.footer{
+    background-image : url("../public/bgfooter.png");
+    z-index : 2;
+    width : 1440px;
+    height : 490px;
+}
+
+.left-footer{
+    font-family : Comic Sans;
+    margin : 10rem 2rem 0.5rem 3rem;
+}
+
+#bottom {
+    margin-top : 10.5rem;
+    margin-left : 3rem;
+}
+
+.right-footer{
+    font-family : Comic Sans;
+    margin : 10rem 2rem 2rem 3rem;
+}
+
+.mid-footer{
+    font-family : Comic Sans;
+    margin-top : 2.5rem;
+    margin-left : 2rem;
+}
+
+#top {
+    font-family : Franklin Gothic Medium;
+    margin-top : 18rem;
+    margin-left : 1.5rem;
+}
+
+#garis  {
+    margin-left : 1.5rem;
+}
+
+#status {
+    margin-left : 1.5rem;
+}
+.footer .link {
+    margin-left : 3rem;
 }
